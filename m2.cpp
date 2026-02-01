@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void swapint(string J , string W)
+void swapint(string& J , string& W)
 {
  string Temp =J;
  J=W;
@@ -12,7 +12,9 @@ cout<<"W = "<<W<<endl;
 
 int main()
 {
- swapint("Juse" , "Water");
+string J="juse" ,W ="waher";
+
+ swapint(J,W );
 
     return 0;
 }
